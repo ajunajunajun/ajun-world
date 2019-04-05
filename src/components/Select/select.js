@@ -14,7 +14,7 @@ class Select extends React.Component{
       <HeaderDiv>
         <Link to='/'>Top</Link>
         <Link to='/google'>Google</Link>
-        <Link to='/fps'>Fps</Link>
+        <Link to='/threed'>Threed</Link>
       </HeaderDiv>
     );
   }
