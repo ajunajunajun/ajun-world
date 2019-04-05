@@ -1,35 +1,16 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const parentAnimation = keyframes`
-  0% { transform: rotateY(45deg); }
-  100% { transform: rotateY(-45deg); }
-`;
-const childAnimation = keyframes`
-  0% { transform: rotateX(0deg); }
-  100% { transform: rotateX(180deg); }
-`;
+import Pakapaka from '../../components/Threed/pakapaka.js';
+import Dice from '../../components/Threed/dice.js';
 
 const ThreedDiv = styled.div`
 `;
 const SceneDiv = styled.div`
+  display: inline-block;
   height: 298px;
   width: 298px;
   border: 1px #000 solid;
-`;
-const ParentDiv = styled.div`
-  margin: 50px 50px;
-  width: 200px;
-  height: 200px;
-  background: black;
-  transform-style: preserve-3d;
-  animation: ${parentAnimation} 3000ms ease-in-out infinite alternate;
-`;
-const ChildDiv = styled.div`
-  width: 200px;
-  height: 200px;
-  background: orange;
-  animation: ${childAnimation} 1000ms ease-in-out infinite alternate;
 `;
 
 class Threed extends React.Component{
@@ -37,9 +18,10 @@ class Threed extends React.Component{
     return(
       <ThreedDiv>
         <SceneDiv>
-          <ParentDiv>
-            <ChildDiv/>
-          </ParentDiv>
+          <Pakapaka />
+        </SceneDiv>
+        <SceneDiv>
+          <Dice />
         </SceneDiv>
       </ThreedDiv>
     );
