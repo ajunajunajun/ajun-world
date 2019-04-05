@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeaderDiv = styled.div`
-  border: 0px #000 solid;
-  height: 0px;
+  border: 1px #000 double;
+  height: 20px;
 `;
 
 class Select extends React.Component{
@@ -14,6 +14,7 @@ class Select extends React.Component{
       <HeaderDiv>
         <Link to='/'>Top</Link>
         <Link to='/google'>Google</Link>
+        <Link to='/threed'>Threed</Link>
       </HeaderDiv>
     );
   }
