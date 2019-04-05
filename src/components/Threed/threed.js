@@ -23,6 +23,9 @@ class Threed extends React.Component{
         <SceneDiv>
           <Dice />
         </SceneDiv>
+        <SceneDiv>
+
+        </SceneDiv>
       </ThreedDiv>
     );
   }
