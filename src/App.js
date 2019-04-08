@@ -11,7 +11,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Select />
         <body>
           <Switch>
             <Route exact path='/' component={ Top } />
@@ -19,6 +18,7 @@ class App extends Component {
             <Route exact path='/threed' component={ Threed } />
           </Switch>
         </body>
+        <Select />
       </div>
     );
   }

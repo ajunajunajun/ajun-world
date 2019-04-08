@@ -49,7 +49,8 @@ const GoogleFormDiv = styled.div`
   padding-left: 12px;
 `;
 const GoogleForm = styled.form`
-  border: 1px #000 solid;
+  border: 1px #dcdcdc solid;
+  border-radius: 100px;
   height: 100%;
 `;
 const GoogleMarkDiv = styled.div`
