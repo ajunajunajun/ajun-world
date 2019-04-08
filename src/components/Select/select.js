@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeaderDiv = styled.div`
-  border: 1px #000 double;
-  height: 20px;
-
+  border: 1px #000 solid;
+  height: 19px;
+  width: calc(100vw - 2px);
+  bottom: 20px;
+  position: absolute;
 `;
 
 class Select extends React.Component{

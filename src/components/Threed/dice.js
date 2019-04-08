@@ -6,7 +6,7 @@ const rotate = keyframes`
   100% { transform: rotateX(360deg) rotateY(720deg); }
 `;
 
-const DiceDiv = styled.div`
+const SceneDiv = styled.div`
   margin: 100px 100px;
   width: 100px;
   height: 100px;
@@ -60,14 +60,14 @@ const Dice6Div = styled.div`
 export default class Dice extends React.Component{
   render(){
     return(
-      <DiceDiv>
+      <SceneDiv>
         <Dice1Div/>
         <Dice2Div/>
         <Dice3Div/>
         <Dice4Div/>
         <Dice5Div/>
         <Dice6Div/>
-      </DiceDiv>
+      </SceneDiv>
     );
   }
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import Pakapaka from '../../components/Threed/pakapaka.js';
 import Dice from '../../components/Threed/dice.js';
+import Sphere from '../../components/Threed/sphere.js';
 
 const ThreedDiv = styled.div`
 `;
@@ -24,7 +25,7 @@ class Threed extends React.Component{
           <Dice />
         </SceneDiv>
         <SceneDiv>
-
+          <Sphere />
         </SceneDiv>
       </ThreedDiv>
     );
