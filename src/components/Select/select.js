@@ -1,24 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import styled from 'styled-components';
-
-const HeaderDiv = styled.div`
-  border: 1px #000 solid;
-  height: 19px;
-  width: calc(100vw - 2px);
-  bottom: 20px;
-  position: absolute;
-`;
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/Button';
+import MenuIcon from '@material-ui/icons/Menu';
+import Drawer from '@material-ui/core/Drawer';
 
 class Select extends React.Component{
+  state = {
+    left: false,
+  };
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
+  };
+
   render(){
     return(
-      <HeaderDiv>
-        <Link to='/'>Top </Link>
-        <Link to='/google'>Google </Link>
-        <Link to='/threed'>Threed </Link>
-      </HeaderDiv>
+      <div>
+        <AppBar position='static'>
+          <Toolbar>
+            <IconButton onClick={this.toggleDrawer('left', true)} color="inherit">
+              <MenuIcon />
+            </IconButton>
+            <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
+              <div
+                tabIndex={0}
+                role="button"
+                onClick={this.toggleDrawer('left', false)}
+                onKeyDown={this.toggleDrawer('left', false)}
+              >
+                <div>waaaaaaaaaaaaaaaaa</div>
+              </div>
+            </Drawer>
+          </Toolbar>
+        </AppBar>
+      </div>
     );
   }
 }
