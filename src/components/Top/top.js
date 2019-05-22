@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-
 const moveimg = keyframes`
   0%  { left: 90%; }
   100%{ left: -5%; }

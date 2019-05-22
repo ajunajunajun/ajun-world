@@ -24,6 +24,7 @@ class Select extends React.Component{
             <IconButton onClick={this.toggleDrawer('left', true)} color="inherit">
               <MenuIcon />
             </IconButton>
+              <Link to='/'>Home</Link>
             <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
               <div
                 tabIndex={0}
@@ -31,7 +32,9 @@ class Select extends React.Component{
                 onClick={this.toggleDrawer('left', false)}
                 onKeyDown={this.toggleDrawer('left', false)}
               >
-                <div>waaaaaaaaaaaaaaaaa</div>
+                <Link to='/google'>Google</Link>
+                <Link to='/threed'>Threed</Link>
+                <Link to='/parallexpage'>ParallexPage</Link>
               </div>
             </Drawer>
           </Toolbar>
