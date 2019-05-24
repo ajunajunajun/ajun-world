@@ -61,7 +61,7 @@ const TopImg5 = styled.img`
 class Top extends React.Component{
   render(){
     return(
-      <TopDiv>
+      <TopDiv className="Top">
         <TopH1Div>
           <h1>THIS IS AJUN WORLD</h1>
         </TopH1Div>

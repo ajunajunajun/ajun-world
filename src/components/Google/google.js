@@ -89,7 +89,7 @@ const GoogleInput2 = styled.input`
 class Google extends React.Component{
   render(){
     return(
-      <GoogleDiv>
+      <GoogleDiv className="Google">
         <GoogleHeaderDiv>
           <GoogleHeaderP>Gmail</GoogleHeaderP>
           <GoogleHeaderP>画像</GoogleHeaderP>

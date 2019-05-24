@@ -6,7 +6,7 @@ import Select from './components/Select/select';
 import Top from './components/Top/top';
 import Google from './components/Google/google';
 import Threed from './components/Threed/threed';
-import ParallaxPage from './components/ParallaxPage/parallaxpage';
+import Maboroshi from './components/Maboroshi/maboroshi';
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
             <Route exact path='/' component={ Top } />
             <Route exact path='/google' component={ Google } />
             <Route exact path='/threed' component={ Threed } />
-            <Route exact path='/parallaxpage' component={ ParallaxPage } />
+            <Route exact path='/maboroshi' component={ Maboroshi} />
           </Switch>
         </body>
       </div>

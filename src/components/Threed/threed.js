@@ -17,7 +17,7 @@ const SceneDiv = styled.div`
 class Threed extends React.Component{
   render(){
     return(
-      <ThreedDiv>
+      <ThreedDiv className="Threed">
         <SceneDiv>
           <Pakapaka />
         </SceneDiv>
