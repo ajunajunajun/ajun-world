@@ -3,7 +3,6 @@ import styled, { keyframes } from 'styled-components';
 
 const IntroDiv = styled.div`
   padding-top: calc(50vh - 63px);
-  background-color: #dcdcdc;
   overflow: hidden;
 `;
 const TitleDiv = styled.div`

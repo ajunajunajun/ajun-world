@@ -7,6 +7,7 @@ import News from '../../components/Maboroshi/Home/news.js';
 const MaboroshiDiv = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 `;
 
 class Maboroshi extends React.Component{
