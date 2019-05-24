@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
@@ -13,9 +11,6 @@ const SelectDiv = styled.div`
   left: 0px;
 `;
 
-const GoogleDiv = styled.div`
-  min-width: 980px;
-`;
 class Select extends React.Component{
   state = {
     left: false,

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const IntroDiv = styled.div`
   padding-top: calc(50vh - 63px);
