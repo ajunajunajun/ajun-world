@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 
 const SelectDiv = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
 `;
